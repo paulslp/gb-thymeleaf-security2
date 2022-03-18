@@ -66,7 +66,6 @@ public class Product {
     @Column(name = "LAST_MODIFIED_DATE")
     private LocalDateTime lastModifiedDate;
 
-
     @Override
     public String toString() {
         return "Product{" +
