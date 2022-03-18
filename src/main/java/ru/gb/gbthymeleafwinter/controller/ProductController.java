@@ -20,7 +20,7 @@ public class ProductController {
     private final ProductService productService;
 
     @GetMapping("/all")
-    @PreAuthorize("hasAuthority('product.read')||isAnonymous()")
+    @PreAuthorize("hasAuthority('product.read')")
     public String getProductList(Model model) {
         model.addAttribute("products", productService.findAll());
         return "product-list";

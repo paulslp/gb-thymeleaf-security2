@@ -26,7 +26,7 @@
                 <th scope="col">Цена</th>
                 <th scope="col" sec:authorize="hasAuthority('product.update')">Редактировать</th>
                 <th scope="col" sec:authorize="hasAuthority('product.delete')">Удалить</th>
-                <th scope="col" sec:authorize="hasAuthority('product.read') || isAnonymous()">Просмотр</th>
+                <th scope="col" sec:authorize="hasAuthority('product.read')">Просмотр</th>
                 <th scope="col" sec:authorize="hasAuthority('cart.add')">Корзина</th>
             </tr>
             </thead>
